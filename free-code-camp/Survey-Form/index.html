@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--font awesome-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!--meta content-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--project title-->
+		<title id="page-title">Demo title</title>
+		<!--links-->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!--main chunk-->
+		<main class="main-container">
+			<!--Title-->
+			<h1 id="title">Demo Title</h1>
+			<!--Description-->
+			<p id="description">About our form</p>
+			<!--Form-->
+			<Form id="survey-form">
+				<!--name-label-->
+				<label id="name-label" for="name">
+					<p>Your name</p>
+					<input
+						type="text
+                              "
+						id="name"
+						required
+						placeholder="name"
+						class="inputs"
+					/>
+				</label>
+				<!--email-label-->
+				<p>Your email</p>
+				<label id="email-label" for="email">
+					<input
+						type="email"
+						name="email"
+						id="email"
+						required
+						placeholder="example@example.com"
+						class="inputs"
+					/>
+				</label>
+				<br />
+				<!--number-label-->
+				<p>Your Phone Number</p>
+				<label id="number-label" for="number">
+					<input
+						type="number"
+						name="number"
+						id="number"
+						placeholder="00-000-000-00"
+						min="8"
+						max="14"
+						class="inputs"
+					/>
+				</label>
+				<!--Dropdown menu-->
+				<p>Choose Carefully</p>
+				<br />
+				<label for="dropdown">
+					<select name="dropdown" id="dropdown">
+						<option value="1-a">1a</option>
+						<option value="2-b">2b</option>
+					</select>
+				</label>
+				<br />
+				<!--radioButtons-->
+				<!--Option-1-->
+				<p>yes Or no</p>
+				<label for="radios">
+					<input
+						type="radio"
+						name="yes/no"
+						id="radios"
+						value="yes"
+						class="radios"
+					/>yes
+					<input
+						type="radio"
+						name="yes/no"
+						id="radios"
+						value="none"
+						class="radios"
+					/>none
+					<br />
+					<!--Option-2-->
+					<input
+						type="radio"
+						name="yes/no"
+						id="radios"
+						value="no"
+						class="radios"
+					/>no
+				</label>
+				<br />
+				<!--Checkboxes-->
+				<br />
+				<p>Your Option</p>
+				<input
+					type="checkbox"
+					name="checkboxes"
+					value="frontend"
+					class="checkboxes"
+				/>frontend
+				<input
+					type="checkbox"
+					name="checkboxes"
+					value="backend"
+					class="checkboxes"
+				/>backend
+				<br />
+				<!--comments-->
+				<br />
+				<textarea
+					name="comments"
+					id="comments"
+					cols="30"
+					rows="6"
+				></textarea>
+				<br />
+				<!--submit-->
+				<button type="submit" id="submit">Submit !!!</button>
+			</Form>
+		</main>
+	</body>
+</html>

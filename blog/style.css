@@ -1,0 +1,44 @@
+body {
+	margin: auto;
+	background: repeating-linear-gradient(
+		45deg,
+		cyan,
+		darkblue,
+		20px,
+		darkblue,
+		cyan
+	);
+	color: black;
+	font-family: sans-serif;
+	height: auto;
+}
+#title {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+article {
+	max-width: 50%;
+	margin: auto;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 2px;
+	background: repeating-linear-gradient(
+		45deg,
+		grey,
+		lightgrey,
+		grey,
+		lightgrey
+	);
+	height: auto;
+	box-shadow: 10px 10px 30px black;
+}
+@media (max-width: 1000px) {
+	article {
+		max-width: 80%;
+	}
+}
+p {
+	text-align: justify;
+}

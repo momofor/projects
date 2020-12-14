@@ -1,0 +1,93 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Poppins:wght@600&family=Texturina:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+#image {
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 1%;
+	padding-top: 10px;
+}
+
+#Title {
+	font-family: Texturina;
+	font-size: 44px;
+	font-weight: bold;
+	opacity: 1;
+}
+.titles {
+	border: 2px solid black;
+	border-radius: 50px;
+	opacity: 0.5;
+	background-color: lightpink;
+	margin: 5%;
+	text-align: center;
+	color: darkblue;
+}
+body {
+	background-color: #fad569;
+	color: #33473c;
+	font-family: Poppins;
+	padding-left: auto;
+	padding-right: auto;
+}
+.darkmode {
+	background: black;
+	color: white;
+}
+.link1 {
+	text-decoration: none;
+	color: darkblue;
+	text-align: center;
+}
+#tribute-info {
+	text-align: center;
+	line-height: 1.2em;
+	font-size: 24px;
+}
+#photo-info {
+	margin: -5px;
+	text-align: center;
+}
+.timeline h1 {
+	padding: 20px;
+	text-align: center;
+	color: blue;
+	opacity: 0.6;
+	font-family: roboto;
+	font-size: 30px;
+}
+#separator-1 {
+	color: lightpink;
+	border: none;
+	height: 2px;
+	background-color: #d7a9fc;
+	width: 100%;
+}
+.timeline li {
+	font-size: 22px;
+	color: #33473c;
+	padding: 2px;
+}
+ul {
+	list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+	content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #1d6f6f; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.separators {
+	border: none;
+	height: 2px;
+	width: 85%;
+	background-color: #d7a9fc;
+}
+#tribute-link {
+	font-size: 150%;
+}

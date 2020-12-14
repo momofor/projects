@@ -1,0 +1,14 @@
+{
+  "name": "user-story",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "test."
+  },
+  "author": "momofor",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.15.0"
+  }
+}

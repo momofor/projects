@@ -1,0 +1,21 @@
+:root {
+	--coloru: #eb854b;
+	--backgroundu: #0d3333;
+	--rajae: #543342;
+	--p-size: 1.4em;
+	--rajae-size: 3.4em;
+	--rajae-margin-top: 0.6em;
+}
+p {
+	color: var(--coloru);
+	font-size: var(--p-size);
+}
+body {
+	background-color: var(--backgroundu);
+}
+#rajae {
+	color: var(--coloru);
+	font-size: var(--rajae-size);
+	text-align: center;
+	margin-top: var(--rajae-margin-top);
+}

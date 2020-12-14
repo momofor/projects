@@ -1,0 +1,183 @@
+/*font imports*/
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+* {
+	box-sizing: border-box;
+}
+
+#title {
+	--coolu: #777;
+	border: 1px solid #777;
+	color: #c9efe3;
+	border-radius: 5.5px;
+	margin: 6%;
+	text-align: center;
+	font-family: Inconsolata;
+	font-size: 44px;
+	text-align: center;
+}
+#description {
+	color: #b1aac6;
+	text-align: center;
+	font-size: 2em;
+}
+
+main {
+	width: 50%;
+	margin: auto;
+}
+
+body {
+	line-height: 1.4;
+	/*background-color: #093142;*/
+	background: repeating-linear-gradient(
+		45deg,
+		#093142,
+		black,
+		20px,
+		#093142,
+		black
+	);
+	color: #dbc5a3;
+	font: Inconsolata;
+	font-size: 1.2em;
+}
+
+form {
+	max-width: 1000px;
+	min-width: 150px;
+	border: 4px solid white;
+	padding: 20px;
+	border-radius: 2%;
+	background: repeating-linear-gradient(
+		45deg,
+		#09587a,
+		black,
+		#09587a,
+		black
+	);
+	height: 100%;
+	box-shadow: 4px 5px 5px #777;
+}
+form:hover {
+	box-shadow: 4px 5px 10px #777;
+}
+input::placeholder {
+	font-family: Inconsolata;
+	font-size: 1.2em;
+	color: black;
+}
+input:hover {
+	box-shadow: 3px 3px 5px aqua;
+}
+.checkboxes {
+	font-size: 1.2em;
+}
+.inputs {
+	width: 100%;
+	border: 2px solid aqua;
+	border-radius: 5px;
+	background: repeating-linear-gradient(
+		45deg,
+		#498cad,
+		#21404f,
+		#21404f,
+		#498cad
+	);
+	padding: 6px;
+	color: white;
+}
+
+.inputs::placeholder {
+	color: black;
+	font-style: italic;
+}
+
+button {
+	font-family: Inconsolata;
+}
+
+select {
+	font-family: Inconsolata;
+}
+p {
+	text-align: left;
+}
+textarea {
+	width: 100%;
+	background: repeating-linear-gradient(
+		45deg,
+		#09587a,
+		black,
+		#09587a,
+		black
+	);
+	border: 2px solid aqua;
+	border-radius: 3%;
+	color: white;
+	padding: 6px 6px;
+}
+
+textarea:focus {
+	background: repeating-linear-gradient(
+		45deg,
+		#042a3b,
+		#074661,
+		#042a3b,
+		#074661
+	);
+	box-shadow: 2px 2px 4px aqua;
+}
+
+button {
+	background: repeating-linear-gradient(
+		45deg,
+		#074661,
+		#042a3b,
+		#074661,
+		#042a3b
+	);
+	color: white;
+	border: 2px solid aqua;
+	border-radius: 4px;
+	padding: 2px;
+	margin-left: 35%;
+	margin-right: auto;
+	margin-top: 1%;
+	font-size: 1.4em;
+}
+button:hover {
+	background: repeating-linear-gradient(
+		45deg,
+		#042a3b,
+		#074661,
+		#042a3b,
+		#074661
+	);
+	box-shadow: 2px 2px 4px aqua;
+}
+
+.radios {
+	height: auto;
+	display: inline-block;
+}
+
+/*responsive design*/
+@media (max-width: 1000px) {
+	main {
+		width: 80%;
+		font-size: 10px;
+		margin: auto;
+	}
+	#title {
+		font-size: 4em;
+	}
+	p {
+		font-size: 2.4em;
+	}
+	textarea {
+		margin-right: 15%;
+	}
+	button {
+		font-size: 2em;
+	}
+}

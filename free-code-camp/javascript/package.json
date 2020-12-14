@@ -1,0 +1,14 @@
+{
+  "name": "javascript",
+  "version": "0.1.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "momofor",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.15.0"
+  }
+}
