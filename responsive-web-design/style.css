@@ -1,1 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+#title {
+	color: #004;
+	font-size: 50px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+.inner-content {
+	color: black;
+	box-shadow: 1px 1px 5px #777;
+	padding: 1vw;
+	background: #cbdedb;
+}
+header {
+	width: 50%;
+	margin: auto;
+	text-align: justify;
+	font-family: poppins;
+}
+@media (max-width: 1000px) {
+	header {
+		width: 80%;
+	}
+}
+#profile-picture {
+	max-width: 10vw;
+	border-radius: 1vw;
+	float: left;
+	padding: 2vw;
+}
