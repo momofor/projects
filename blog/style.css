@@ -1,44 +1,49 @@
-body {
-	margin: auto;
-	background: repeating-linear-gradient(
-		45deg,
-		cyan,
-		darkblue,
-		20px,
-		darkblue,
-		cyan
-	);
-	color: black;
-	font-family: sans-serif;
-	height: auto;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+	box-sizing: border-box;
 }
+
 #title {
-	font-family: sans-serif;
-	font-weight: bold;
-	font-style: italic;
+	color: #d8e6e6;
+	border: 0.1em solid #9ad8d9;
+	margin-bottom: 1.6em;
+	padding: 0 1vw;
 	text-align: center;
+	border-radius: 2vw;
+	display: inline-block;
 }
-article {
-	max-width: 50%;
-	margin: auto;
-	border: 2px solid white;
-	border-radius: 10px;
-	padding: 2px;
-	background: repeating-linear-gradient(
-		45deg,
-		grey,
-		lightgrey,
-		grey,
-		lightgrey
-	);
-	height: auto;
-	box-shadow: 10px 10px 30px black;
-}
-@media (max-width: 1000px) {
-	article {
-		max-width: 80%;
-	}
-}
-p {
+
+.text {
+	color: #d8e6e6;
+	font-size: 1.6em;
+	line-height: 1.6;
 	text-align: justify;
+	padding: 0 1vw;
+}
+
+article {
+	border: 0.1em solid #9ad8d9;
+	border-radius: 2vw;
+	box-shadow: 0.1em 0.1em 0.5em #9ad8d9;
+	height: auto;
+}
+
+body {
+	max-width: 50%;
+	background-color: #0a0b0e;
+	font-family: poppins;
+	padding: 0 2vw;
+	margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+	body {
+		max-width: 80%;
+		font-size: 1.2em;
+	}
+	article .text p {
+		text-align: none;
+		color: red;
+	}
 }

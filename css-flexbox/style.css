@@ -1,0 +1,21 @@
+.box {
+	background-color: red;
+}
+
+.box:nth-child(odd) {
+	background-color: blue;
+}
+
+.box {
+	height: 100px;
+	min-width: 100px;
+}
+
+.container {
+	display: flex;
+}
+
+body {
+	background-color: #212;
+	color: white;
+}

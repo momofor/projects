@@ -1,0 +1,26 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 10vh);
+	grid-gap: 1em;
+}
+
+div.num {
+	border: 1px solid #fdc35c;
+	background-color: #178dbb;
+	border-radius: 1vw;
+}
+
+body {
+	background-color: #004;
+}
+
+div.num:nth-child(odd) {
+	background-color: #443349;
+}
+div.num.One {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
