@@ -1,0 +1,99 @@
+body {
+	background-color: #2e3440;
+}
+
+.welcome-message {
+	color: #8fbcbb;
+	text-align: center;
+	font-family: "Fira Code ";
+	font-size: 48px;
+	font-weight: lighter;
+}
+
+#clock {
+	font-size: 100px;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+	text-align: center;
+	border: 2px solid #3b4252;
+	border-radius: 20px;
+	font-family: "Fira Code";
+	color: #88c0d0;
+}
+
+.search-box {
+	display: block;
+	margin-top: 10vh;
+	margin: auto;
+	overflow: hidden;
+	width: 80%;
+	/*border: 2px solid #4c566a;*/
+	height: 36px;
+	border-radius: 0.7vh;
+	box-shadow: 0.5em 0.5em 0.6em #3b4252;
+	border-bottom: 2px solid #3b4252;
+}
+
+.search-box:hover {
+	border-bottom: 4px solid #4c566a;
+}
+
+.websites {
+	width: 80%;
+	margin: auto;
+	margin-top: 7vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 5vh);
+	grid-gap: 2vh;
+}
+
+.card {
+	background-color: #3b4252;
+	text-align: center;
+	font-size: 1.6em;
+	font-family: "Fira Code ";
+	text-align: center;
+	color: #88c0d0;
+	border-radius: 0.5vh;
+	padding: 1vh;
+	border: 3px solid #434c5e;
+	cursor: pointer;
+}
+
+.card:hover {
+	border-color: #4c566a;
+	box-shadow: 2px 2px 2px #878a86;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+.information {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+a.weatherwidget-io {
+	position: relative;
+	top: 10vh;
+}
+
+.sub {
+	color: #d8dee9;
+	text-align: center;
+	border: 2px solid #4c566a;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #4c566a;
+}

@@ -1,0 +1,36 @@
+:root {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+body {
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin-left: 5rem;
+	padding: 1rem;
+}
+
+nav {
+	position: fixed;
+	background-color: #23232e;
+	overflow: scroll;
+}
+
+.nav-navbar {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+}
+
+li {
+	width: 100%;
+}

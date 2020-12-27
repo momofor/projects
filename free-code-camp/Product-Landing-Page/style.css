@@ -5,9 +5,8 @@
 	font-family: sans-serif;
 }
 main {
-	display: flex;
-
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 p {
 	font-family: sans-serif;
@@ -23,4 +22,4 @@ img {
 	#title {
 		font-size: 3em;
 	}
-} ;
+}
