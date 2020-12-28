@@ -86,7 +86,7 @@ a {
 
 a.weatherwidget-io {
 	position: relative;
-	top: 10vh;
+	top: 20vh;
 }
 
 .sub {
@@ -96,4 +96,10 @@ a.weatherwidget-io {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: #4c566a;
+}
+
+@media (max-width: 1000px) {
+	#clock {
+		font-size: 3em;
+	}
 }

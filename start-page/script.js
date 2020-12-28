@@ -25,3 +25,5 @@ function showTime() {
 }
 
 showTime();
+
+const but = document.querySelector("button");
