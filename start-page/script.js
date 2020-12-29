@@ -6,15 +6,8 @@ function showTime() {
 	let sec = time.getSeconds();
 	am_pm = "AM";
 
-	if (hour > 12) {
-		hour -= 12;
-		am_pm = "PM";
-	}
-	if (hour == 0) {
-		hr = 12;
-		am_pm = "AM";
-	}
-
+	hour = hour > 12 ? hour - 12 : hour;
+	hour = hour === 0 ? 12 : hour;
 	hour = hour < 10 ? "0" + hour : hour;
 	min = min < 10 ? "0" + min : min;
 	sec = sec < 10 ? "0" + sec : sec;
@@ -25,5 +18,3 @@ function showTime() {
 }
 
 showTime();
-
-const but = document.querySelector("button");
