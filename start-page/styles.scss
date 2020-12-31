@@ -11,7 +11,7 @@ body {
 	font-style: italic;
 }
 
-#clock {
+.clock {
 	font-size: 100px;
 	width: 50%;
 	margin: auto;
@@ -23,12 +23,11 @@ body {
 	color: #88c0d0;
 	font-style: italic;
 	padding: 1vw;
-}
-
-#clock:hover {
-	box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
-	border-color: #434c5e;
-	transition: box-shadow 0.5s, border-color 0.5s;
+	&:hover {
+		box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+		border-color: #434c5e;
+		transition: box-shadow 0.5s, border-color 0.5s;
+	}
 }
 
 .search-box {
@@ -42,10 +41,9 @@ body {
 	border-radius: 0.7vh;
 	box-shadow: 0.5em 0.5em 0.6em #3b4252;
 	border-bottom: 2px solid #3b4252;
-}
-
-.search-box:hover {
-	border-bottom: 4px solid #4c566a;
+	&:hover {
+		border-bottom: 4px solid #4c566a;
+	}
 }
 
 .websites {
@@ -72,13 +70,13 @@ body {
 	border: 2px solid #434c5e;
 	cursor: pointer;
 	font-style: italic;
+	&:hover {
+		border-color: #4c566a;
+		box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+		transition: box-shadow 0.5s, border-color 0.3s;
+	}
 }
 
-.card:hover {
-	border-color: #4c566a;
-	box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
-	transition: box-shadow 0.5s, border-color 0.3s;
-}
 
 a {
 	text-decoration: none;
@@ -123,4 +121,10 @@ a.weatherwidget-io {
 	.search-box {
 		width: 80%;
 	}
+}
+
+div.sass {
+	font-family: cursive;
+	font-size: 1.9em;
+	font-style: italic;
 }

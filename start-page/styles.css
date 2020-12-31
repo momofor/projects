@@ -1,0 +1,130 @@
+body {
+  background-color: #2e3440;
+}
+
+.welcome-message {
+  color: #8fbcbb;
+  text-align: center;
+  font-family: "Fira Code ";
+  font-size: 48px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.clock {
+  font-size: 100px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 2px solid #3b4252;
+  border-radius: 20px;
+  font-family: "Fira Code";
+  color: #88c0d0;
+  font-style: italic;
+  padding: 1vw;
+}
+.clock:hover {
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+  border-color: #434c5e;
+  transition: box-shadow 0.5s, border-color 0.5s;
+}
+
+.search-box {
+  display: block;
+  margin-top: 10vh;
+  margin: auto;
+  overflow: hidden;
+  width: 50%;
+  /*border: 2px solid #4c566a;*/
+  height: 36px;
+  border-radius: 0.7vh;
+  box-shadow: 0.5em 0.5em 0.6em #3b4252;
+  border-bottom: 2px solid #3b4252;
+}
+.search-box:hover {
+  border-bottom: 4px solid #4c566a;
+}
+
+.websites {
+  width: 50%;
+  margin: auto;
+  margin-top: 7vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  background-color: #3b4252;
+  text-align: center;
+  font-size: 1.6em;
+  font-family: "Fira Code ";
+  font-size: lighter;
+  text-align: center;
+  color: #88c0d0;
+  border-radius: 1vh;
+  padding: 1vh;
+  border: 2px solid #434c5e;
+  cursor: pointer;
+  font-style: italic;
+}
+.card:hover {
+  border-color: #4c566a;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+  transition: box-shadow 0.5s, border-color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+a.weatherwidget-io {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+}
+
+.sub {
+  color: #d8dee9;
+  text-align: center;
+  border: 2px solid #4c566a;
+  border-radius: 10px;
+  padding: 10px;
+  /*background-color: #4c566a;*/
+  font-family: "Fira Code";
+  font-size: lighter;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  #clock {
+    font-size: 3em;
+    width: 80%;
+  }
+
+  .websites {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  .search-box {
+    width: 80%;
+  }
+}
+div.sass {
+  font-family: cursive;
+  font-size: 1.9em;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=styles.css.map */
