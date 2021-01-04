@@ -51,7 +51,7 @@ body {
   margin: auto;
   margin-top: 7vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2vh;
   justify-content: center;
   align-content: center;
@@ -80,6 +80,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: inherit;
 }
 
 .subheader {
@@ -107,7 +108,7 @@ a.weatherwidget-io {
 }
 
 @media (max-width: 1000px) {
-  #clock {
+  .clock {
     font-size: 3em;
     width: 80%;
   }

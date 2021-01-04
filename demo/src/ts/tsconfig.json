@@ -3,6 +3,8 @@
 	"compilerOptions": {
 		"watch": true,
 		"esModuleInterop": true,
-		"module": "ESNext"
+		"module": "ESNext",
+		"lib": ["DOM", "ESNext"],
+		"outDir": "../../public/scripts"
 	}
 }

@@ -1,0 +1,24 @@
+{
+	"name": "demo",
+	"version": "1.0.0",
+	"description": "just a demo",
+	"main": "index.js",
+	"scripts": {
+		"test": "testu"
+	},
+	"repository": {
+		"type": "git",
+		"url": "meh@github.com"
+	},
+	"keywords": [
+		"mf",
+		"mf"
+	],
+	"author": "momofor",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.11.1",
+		"@typescript-eslint/parser": "^4.11.1",
+		"eslint": "^7.17.0"
+	}
+}

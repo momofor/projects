@@ -1,0 +1,48 @@
+@import "./mixins";
+body {
+    background-color: #2e3440;
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    
+    #header {
+        background-color: #3b4252;
+        border-radius: 1vh;
+        grid-column: 2/3;
+    }
+}
+
+
+nav {
+    ul {
+        @include flex(row, 10vw);
+        justify-content: center ;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: #8fbcbb;
+                font: sans-serif;
+                font-size: 24px;
+                border: 2px solid #434c5e;
+                border-radius: 1vh;
+                box-shadow: 1px 1px 1px #434c5e;
+                padding: 0.2em;
+            &:hover {
+                box-shadow: 2px 2px 2px #434c5e;
+                color: #88c0d0;
+            }
+}
+}
+}
+}
+
+section {
+    grid-column: 2/3;
+    grid-row: 2/-2;
+    @include flex(column, 2vh)
+    
+}

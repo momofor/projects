@@ -1,0 +1,11 @@
+@mixin flex($direction,$gap ) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin reset() {
+    text-decoration:none ;
+    color: inherit;
+    font-size: inherit;
+}
