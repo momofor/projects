@@ -1,0 +1,11 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"watch": true,
+		"esModuleInterop": true,
+		"target": "ESnext",
+		"module": "ESNext",
+		"rootDir": "./",
+		"outDir": "../public"
+	}
+}

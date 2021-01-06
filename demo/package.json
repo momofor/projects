@@ -1,0 +1,30 @@
+{
+	"name": "demo",
+	"version": "1.0.0",
+	"description": "mea mario",
+	"main": "index.js",
+	"scripts": {
+		"test": "tes"
+	},
+	"repository": {
+		"type": "git",
+		"url": "f"
+	},
+	"keywords": [
+		"m"
+	],
+	"author": "momofor",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/jquery": "^3.5.5",
+		"@typescript-eslint/eslint-plugin": "^4.12.0",
+		"@typescript-eslint/parser": "^4.12.0",
+		"eslint": "^7.17.0",
+		"jquery": "^3.5.1",
+		"prettier-eslint": "^12.0.0",
+		"typescript": "^4.1.3"
+	},
+	"dependencies": {
+		"jquery": "^3.5.1"
+	}
+}
