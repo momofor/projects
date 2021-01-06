@@ -51,7 +51,7 @@ body {
   margin: auto;
   margin-top: 7vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vh;
   justify-content: center;
   align-content: center;
@@ -126,6 +126,22 @@ div.sass {
   font-family: cursive;
   font-size: 1.9em;
   font-style: italic;
+}
+
+button.create {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #4c566a;
+  color: #8fbcbb;
+  border-radius: 1vw;
+  padding: 5px;
+  border: none;
+  font-family: inherit;
+  font-size: 1.4em;
+}
+button.create:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

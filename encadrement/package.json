@@ -1,0 +1,19 @@
+{
+  "name": "encadrement",
+  "version": "1.0.0",
+  "description": "encadrer des values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ff"
+  ],
+  "author": "momofor",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0"
+  }
+}

@@ -4,7 +4,7 @@
 		"watch": true,
 		"esModuleInterop": true,
 		"module": "ESNext",
-		"lib": ["DOM", "ESNext"],
-		"outDir": "../../public/scripts"
+		"rootDir": "./",
+		"outDir": "../public"
 	}
 }
