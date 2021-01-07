@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>welcome back</title>
+	</head>
+	<body>
+		<h1 class="welcome-message">Welcome Back Momofor</h1>
+		<div class="clock">08:46:13</div>
+		<div class="search-area">
+			<iframe
+				class="search-box"
+				src="https://duckduckgo.com/search.html?width=4000&prefill=Duckduckgo&bgcolor=2e3440"
+				frameborder="0"
+			></iframe>
+		</div>
+		<main>
+			<div class="websites">
+				<div class="social subheader">
+					<h1 class="sub">social</h1>
+					<div class="card facebook">
+						<a href="https://www.facebook.com">facebook</a>
+					</div>
+
+					<div class="card twitter">
+						<a href="https://www.twitter.com">twitter</a>
+					</div>
+
+					<div class="card reddit">
+						<a href="https://www.reddit.com">reddit</a>
+					</div>
+
+					<div class="card whatsapp">
+						<a href="https://www.web.whatsapp.com">whatsapp</a>
+					</div>
+
+					<div class="card gmail">
+						<a href="https://mail.google.com/mail/u/0/#inbox"
+							>gmail</a
+						>
+					</div>
+
+					<div class="card outlook">
+						<a href="https://outlook.live.com/mail/0/inbox"
+							>outlook</a
+						>
+					</div>
+				</div>
+
+				<div class="information subheader">
+					<h1 class="sub">information</h1>
+					<div class="card youtube">
+						<a href="https://www.youtube.com">youtube</a>
+					</div>
+
+					<div class="card mal">
+						<a href="https://www.myanimelist.net">myanimelist</a>
+					</div>
+
+					<div class="card home">
+						<a href="127.0.9.1:8080">home</a>
+					</div>
+				</div>
+
+				<div class="dev subheader">
+					<h1 class="sub">dev</h1>
+					<div class="fonts card">
+						<a href="https://fonts.google.com/">fonts</a>
+					</div>
+					<div class="color card">
+						<a href="https://color.adobe.com/create/color-wheel"
+							>colors</a
+						>
+					</div>
+					<div class="documnetaion card">
+						<a href="https://developer.mozilla.org/en-US/"
+							>documnetaion</a
+						>
+					</div>
+					<div class="sass card">
+						<a href="https://sass-lang.com/blog">sass</a>
+					</div>
+					<div class="card freecodecamp">
+						<a href="https://www.freecodecamp.org/learn/"
+							>freecodecamp</a
+						>
+					</div>
+					<div class="card hacks">
+						<a href="https://hacks.mozilla.org/"> hacks</a>
+					</div>
+					<div class="card ts">
+						<a
+							href="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html"
+							>typescript</a
+						>
+					</div>
+				</div>
+			</div>
+
+			<div class="weather-forecast">
+				<a
+					class="weatherwidget-io"
+					href="https://forecast7.com/en/34d71n2d03/oujda-angad-province/"
+					data-label_1="OUJDA-ANGAD"
+					data-label_2="WEATHER"
+					data-font="fira sans"
+					data-icons="Climacons Animated"
+					data-mode="Current"
+					data-theme="gray"
+					data-basecolor="#2e3440"
+					data-textcolor="#eceff4"
+					data-highcolor="#bf616a"
+					data-lowcolor="#88c0d0"
+					data-suncolor="#ebcb8b"
+					data-mooncolor="#d8dee9"
+					data-cloudcolor="#eceff4"
+					data-cloudfill="#4c566a"
+					data-raincolor="#81a1c1"
+					data-snowcolor="#e5e9f0"
+					>OUJDA-ANGAD WEATHER</a
+				>
+			</div>
+			<button class="create">create card</button>
+		</main>
+		<style>
+			body {
+				background-color: #2e3440;
+			}
+
+			.welcome-message {
+				color: #8fbcbb;
+				text-align: center;
+				font-family: "Fira Code ";
+				font-size: 48px;
+				font-weight: lighter;
+				font-style: italic;
+			}
+
+			.clock {
+				font-size: 100px;
+				width: 50%;
+				margin: auto;
+				margin-bottom: 50px;
+				text-align: center;
+				border: 2px solid #3b4252;
+				border-radius: 20px;
+				font-family: "Fira Code";
+				color: #88c0d0;
+				font-style: italic;
+				padding: 1vw;
+			}
+			.clock:hover {
+				box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+				border-color: #434c5e;
+				transition: box-shadow 0.5s, border-color 0.5s;
+			}
+
+			.search-box {
+				display: block;
+				margin-top: 10vh;
+				margin: auto;
+				overflow: hidden;
+				width: 50%;
+				/*border: 2px solid #4c566a;*/
+				height: 36px;
+				border-radius: 0.7vh;
+				box-shadow: 0.5em 0.5em 0.6em #3b4252;
+				border-bottom: 2px solid #3b4252;
+			}
+			.search-box:hover {
+				border-bottom: 4px solid #4c566a;
+			}
+
+			.websites {
+				width: 50%;
+				margin: auto;
+				margin-top: 7vh;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 2vh;
+				justify-content: center;
+				align-content: center;
+			}
+
+			.card {
+				background-color: #3b4252;
+				text-align: center;
+				font-size: 1.6em;
+				font-family: "Fira Code ";
+				font-size: lighter;
+				text-align: center;
+				color: #88c0d0;
+				border-radius: 1vh;
+				padding: 1vh;
+				border: 2px solid #434c5e;
+				cursor: pointer;
+				font-style: italic;
+			}
+			.card:hover {
+				border-color: #4c566a;
+				box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.1);
+				transition: box-shadow 0.5s, border-color 0.3s;
+			}
+
+			a {
+				text-decoration: none;
+				color: inherit;
+				font-size: inherit;
+			}
+
+			.subheader {
+				display: flex;
+				flex-direction: column;
+				gap: 2vh;
+			}
+
+			a.weatherwidget-io {
+				position: relative;
+				display: block;
+				margin-top: 10px;
+			}
+
+			.sub {
+				color: #d8dee9;
+				text-align: center;
+				border: 2px solid #4c566a;
+				border-radius: 10px;
+				padding: 10px;
+				/*background-color: #4c566a;*/
+				font-family: "Fira Code";
+				font-size: lighter;
+				font-style: italic;
+			}
+
+			@media (max-width: 1000px) {
+				.clock {
+					font-size: 3em;
+					width: 80%;
+				}
+
+				.websites {
+					grid-template-columns: repeat(2, 1fr);
+					width: 80%;
+				}
+
+				.search-box {
+					width: 80%;
+				}
+			}
+			div.sass {
+				font-family: cursive;
+				font-size: 1.9em;
+				font-style: italic;
+			}
+
+			button.create {
+				position: absolute;
+				left: 0;
+				top: 0;
+				background-color: #4c566a;
+				color: #8fbcbb;
+				border-radius: 1vw;
+				padding: 5px;
+				border: none;
+				font-family: inherit;
+				font-size: 1.4em;
+			}
+			button.create:hover {
+				cursor: pointer;
+			}
+
+			/*# sourceMappingURL=styles.css.map */
+		</style>
+		<script>
+			setInterval(showTime, 1000);
+			function showTime() {
+				var time = new Date();
+				var hour = time.getHours();
+				var min = time.getMinutes();
+				var sec = time.getSeconds();
+				var am_pm = "AM";
+				if (hour > 12) {
+					hour -= 12;
+					am_pm = "PM";
+				}
+				if (hour == 0) {
+					hour = 12;
+					am_pm = "AM";
+				}
+				hour = hour < 10 ? "0" + hour : hour;
+				min = min < 10 ? "0" + min : min;
+				sec = sec < 10 ? "0" + sec : sec;
+				var currentTime = hour + ":" + min + ":" + sec + am_pm;
+				document.querySelector(".clock").innerHTML = currentTime;
+			}
+			showTime();
+			console.log("is this showing up ?");
+			var create = document.querySelector("button");
+			create.addEventListener("click", createCard);
+			function createCard() {
+				var cardName = prompt("call the card");
+				var cardLink = prompt("call the link");
+				var newType = prompt(
+					"do you want to create a new class ? yes/no"
+				);
+				if (newType === "yes") {
+					var cardType = prompt(
+						"what do you want to call the type ?"
+					);
+					var cardParentParent = document.querySelector(
+						"div.websites"
+					);
+					var addCardParent = cardParentParent.appendChild(
+						document.createElement("div")
+					);
+					addCardParent.classList.add(cardType, "subheader");
+					var sub = addCardParent.appendChild(
+						document.createElement("h1")
+					);
+					sub.classList.add("sub", cardName);
+					sub.textContent = cardType;
+					var card = addCardParent.appendChild(
+						document.createElement("div")
+					);
+					card.classList.add("card", cardName);
+					var finishedCard = document.querySelector(
+						".card." + cardName
+					);
+					var anchor = finishedCard.appendChild(
+						document.createElement("a")
+					);
+					anchor.classList.add(cardName);
+					var link1 = document.querySelector("a." + cardName);
+					link1.setAttribute("href", cardLink);
+					link1.innerHTML = cardName;
+				} else {
+					var cardType = prompt("what type do you want the card");
+					var setCardType = document.querySelector("div." + cardType);
+					var card = setCardType.appendChild(
+						document.createElement("div")
+					);
+					card.classList.add("card", cardName);
+					var finishedCard = document.querySelector(
+						".card." + cardName
+					);
+					var anchor = finishedCard.appendChild(
+						document.createElement("a")
+					);
+					anchor.classList.add(cardName);
+					var link1 = document.querySelector("a." + cardName);
+					link1.setAttribute("href", cardLink);
+					link1.innerHTML = cardName;
+				}
+			}
+		</script>
+	</body>
+</html>

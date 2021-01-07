@@ -8,8 +8,8 @@ var addToggle = document.querySelector(".addToggle");
 var add = document.getElementsByClassName("add");
 resultBut.addEventListener("click", log);
 function log() {
-    var aVal = a.value;
-    var xVal = x.value;
+    var aVal = a.valueAsNumber;
+    var xVal = x.valueAsNumber;
     var ax = aVal - xVal;
     if (ax < 0) {
         result.textContent =
@@ -42,10 +42,10 @@ function logCB() {
         var element = add[i];
         element.style.visibility = "visible";
     }
-    var aVal = a.value;
-    var xVal = x.value;
-    var bVal = b.value;
-    var cVal = c.value;
+    var aVal = a.valueAsNumber;
+    var xVal = x.valueAsNumber;
+    var bVal = b.valueAsNumber;
+    var cVal = c.valueAsNumber;
     var ax = aVal - xVal;
     var bb = ax - bVal;
 }
