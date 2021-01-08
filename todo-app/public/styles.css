@@ -1,14 +1,25 @@
+* {
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #2e3440;
   color: white;
   text-align: center;
+  display: grid;
+  grid-template-rows: 30vh 70vh;
+  grid-template-columns: 20% 60% 20%;
+  min-height: 100%;
 }
 
 form {
-  border: 1px solid white;
+  border: 2px solid lightblue;
   padding: 1vh;
   display: inline-block;
   border-radius: 1vh;
+  grid-column: 2/3;
 }
 
 .taskCard {
@@ -20,23 +31,47 @@ form {
 }
 
 #tasks {
-  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  grid-column: -2/-3;
 }
 
 .taskContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vh;
   border: 2px solid cyan;
   border-radius: 1vh;
   display: inline-block;
 }
 
-.removeBut {
-  display: inline-block;
+.removeBut, .checkBut {
+  padding: none;
+  background-color: orange;
+  padding: 1vh;
+  color: white;
+  border-radius: 1vh;
+  position: relative;
+  border: none;
+  margin: 5px;
+}
+
+.checkBut {
+  background-color: green;
+}
+
+.checked {
+  background-color: green;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  transition: 0.3s transform;
+}
+
+.filter-tasks:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
