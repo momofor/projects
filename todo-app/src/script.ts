@@ -3,12 +3,8 @@ const taskButton = <HTMLInputElement>document.getElementById("taskBut");
 const clearButton = <HTMLButtonElement>document.querySelector("#clear");
 const tasks = <HTMLDivElement>document.querySelector("#tasks");
 const taskCard = <HTMLLIElement>document.querySelector(".taskCard");
-const removeBut = <HTMLCollectionOf<HTMLButtonElement>>(
-	document.getElementsByClassName("removeBut")
-);
-const checkBut = <HTMLCollectionOf<HTMLButtonElement>>(
-	document.getElementsByClassName("checkBut")
-);
+const removeBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("removeBut");
+const checkBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("checkBut");
 const filterOption = <HTMLSelectElement>document.querySelector(".filter-tasks");
 
 taskButton.addEventListener("click", addTask);
@@ -19,21 +15,15 @@ function addTask() {
 	const createTaskContainer = tasks.appendChild(document.createElement("ul"));
 	createTaskContainer.classList.add("taskContainer");
 
-	const createTaskCard = createTaskContainer.appendChild(
-		document.createElement("li")
-	);
+	const createTaskCard = createTaskContainer.appendChild(document.createElement("li"));
 	createTaskCard.classList.add("taskCard");
 	createTaskCard.innerHTML = taskVal;
 
-	const createTaskDelBut = createTaskContainer.appendChild(
-		document.createElement("button")
-	);
+	const createTaskDelBut = createTaskContainer.appendChild(document.createElement("button"));
 	createTaskDelBut.classList.add("removeBut");
 	createTaskDelBut.innerHTML = `<i class="fas fa-trash"></i>`;
 
-	const createCheckBut = createTaskContainer.appendChild(
-		document.createElement("button")
-	);
+	const createCheckBut = createTaskContainer.appendChild(document.createElement("button"));
 	createCheckBut.innerHTML = `<i class="fas fa-check"></i>`;
 	createCheckBut.classList.add("checkBut");
 

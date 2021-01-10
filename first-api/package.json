@@ -1,0 +1,24 @@
+{
+	"name": "first-api",
+	"version": "1.0.0",
+	"description": "my first api",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"keywords": [
+		"f"
+	],
+	"author": "momofor",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.12.0",
+		"@typescript-eslint/parser": "^4.12.0",
+		"eslint": "^7.17.0"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^5.11.11",
+		"nodemon": "^2.0.7"
+	}
+}
