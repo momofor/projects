@@ -1,6 +1,6 @@
-var express = require("express");
+//var express = require("express");
+import express from express;
 var app = express();
-var mongoose = require("mongoose");
 
 // viewed at http://localhost:8080
 app.get("/", function (req, res) {

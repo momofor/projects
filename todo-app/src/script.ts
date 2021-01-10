@@ -1,8 +1,12 @@
+import { filterTasks } from "./filterTasks";
+
 const task = <HTMLInputElement>document.querySelector("#task");
 const taskButton = <HTMLInputElement>document.getElementById("taskBut");
 const clearButton = <HTMLButtonElement>document.querySelector("#clear");
-const tasks = <HTMLDivElement>document.querySelector("#tasks");
+// exports
+export const tasks = <HTMLDivElement>document.querySelector("#tasks");
 const taskCard = <HTMLLIElement>document.querySelector(".taskCard");
+
 const removeBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("removeBut");
 const checkBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("checkBut");
 const filterOption = <HTMLSelectElement>document.querySelector(".filter-tasks");
@@ -61,21 +65,4 @@ function clearTasks() {
 		tasks.removeChild(tasks.lastChild);
 	}
 }
-
-function filterTasks(e: any) {
-	const taskList = tasks.childNodes;
-	taskList.forEach((taskCard) => {
-		switch (e.target.value) {
-			case "all":
-				(taskCard as HTMLLIElement).style.display = "flex";
-				break;
-
-			case "completed":
-				if ((taskCard as HTMLLIElement).classList.contains("checked")) {
-					(taskCard as HTMLLIElement).style.display = "flex";
-				} else {
-					(taskCard as HTMLLIElement).style.display = "none";
-				}
-		}
-	});
-}
+filterTasks;
