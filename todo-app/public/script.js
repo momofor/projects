@@ -1,9 +1,7 @@
-import { filterTasks } from "./filterTasks";
 var task = document.querySelector("#task");
 var taskButton = document.getElementById("taskBut");
 var clearButton = document.querySelector("#clear");
-// exports
-export var tasks = document.querySelector("#tasks");
+var tasks = document.querySelector("#tasks");
 var taskCard = document.querySelector(".taskCard");
 var removeBut = document.getElementsByClassName("removeBut");
 var checkBut = document.getElementsByClassName("checkBut");
@@ -53,4 +51,20 @@ function clearTasks() {
         tasks.removeChild(tasks.lastChild);
     }
 }
-filterTasks;
+function filterTasks(e) {
+    var taskList = tasks.childNodes;
+    taskList.forEach(function (taskCard) {
+        switch (e.target.value) {
+            case "all":
+                taskCard.style.display = "flex";
+                break;
+            case "completed":
+                if (taskCard.classList.contains("checked")) {
+                    taskCard.style.display = "flex";
+                }
+                else {
+                    taskCard.style.display = "none";
+                }
+        }
+    });
+}

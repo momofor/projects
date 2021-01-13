@@ -1,22 +1,18 @@
-import { filterTasks } from "./filterTasks";
-
-const task = <HTMLInputElement>document.querySelector("#task");
+const taskInput = <HTMLInputElement>document.querySelector("#task");
 const taskButton = <HTMLInputElement>document.getElementById("taskBut");
 const clearButton = <HTMLButtonElement>document.querySelector("#clear");
-// exports
-export const tasks = <HTMLDivElement>document.querySelector("#tasks");
+const tasksContainer = <HTMLDivElement>document.querySelector("#tasks");
 const taskCard = <HTMLLIElement>document.querySelector(".taskCard");
-
 const removeBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("removeBut");
 const checkBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("checkBut");
 const filterOption = <HTMLSelectElement>document.querySelector(".filter-tasks");
 
-taskButton.addEventListener("click", addTask);
-filterOption.addEventListener("click", filterTasks);
+taskButton.addEventListener("click", AddTask);
+filterOption.addEventListener("click", FilterTasks);
 
-function addTask() {
-	const taskVal = task.value;
-	const createTaskContainer = tasks.appendChild(document.createElement("ul"));
+function AddTask() {
+	const taskVal = taskInput.value;
+	const createTaskContainer = tasksContainer.appendChild(document.createElement("ul"));
 	createTaskContainer.classList.add("taskContainer");
 
 	const createTaskCard = createTaskContainer.appendChild(document.createElement("li"));
@@ -33,25 +29,25 @@ function addTask() {
 
 	for (let i = 0; i < removeBut.length; i++) {
 		removeBut[i].onclick = function () {
-			var thisParent = (this as HTMLButtonElement).parentElement;
-			thisParent.classList.add("fall");
-			thisParent.addEventListener("transitionend", () => {
-				thisParent.remove();
+			var thisCardContainer = (this as HTMLButtonElement).parentElement;
+			thisCardContainer.classList.add("fall");
+			thisCardContainer.addEventListener("transitionend", () => {
+				thisCardContainer.remove();
 			});
 		};
 	}
 
 	for (let i = 0; i < checkBut.length; i++) {
 		checkBut[i].onclick = function () {
-			var coo = (this as HTMLButtonElement).parentElement;
-			coo.classList.add("checked");
+			var thisCardContainer = (this as HTMLButtonElement).parentElement;
+			thisCardContainer.classList.add("checked");
 		};
 	}
 
-	task.value = "";
+	taskInput.value = "";
 }
 
-tasks.addEventListener("click", (e: Event) => {
+tasksContainer.addEventListener("click", (e: Event) => {
 	let target: any = e.target;
 	if ((target as HTMLButtonElement).classList.contains("checkBut")) {
 		const thisParent: HTMLUListElement = target.parentElement;
@@ -59,10 +55,32 @@ tasks.addEventListener("click", (e: Event) => {
 	}
 });
 
-clearButton.addEventListener("click", clearTasks);
-function clearTasks() {
-	while (tasks.firstChild) {
-		tasks.removeChild(tasks.lastChild);
+clearButton.addEventListener("click", ClearTasks);
+function ClearTasks() {
+	while (tasksContainer.firstChild) {
+		tasksContainer.removeChild(tasksContainer.lastChild);
 	}
 }
-filterTasks;
+
+function FilterTasks(e: any) {
+	const taskList = tasksContainer.childNodes;
+	taskList.forEach((taskCard) => {
+		switch (e.target.value) {
+			case "all":
+				(taskCard as HTMLLIElement).style.display = "flex";
+				break;
+
+			case "completed":
+				if ((taskCard as HTMLLIElement).classList.contains("checked")) {
+					(taskCard as HTMLLIElement).style.display = "flex";
+				} else {
+					(taskCard as HTMLLIElement).style.display = "none";
+				}
+		}
+	});
+}
+
+function HelloWorld() {
+	console.log("Hello World");
+}
+HelloWorld();

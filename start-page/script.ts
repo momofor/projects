@@ -32,18 +32,14 @@ create.addEventListener("click", createCard);
 function createCard() {
 	const cardName = prompt("call the card");
 	const cardLink = prompt("call the link");
-	const newType: string = prompt(
-		"do you want to create a new class ? yes/no"
-	);
+	const newType: string = prompt("do you want to create a new class of cards? yes/no");
 
 	if (newType === "yes") {
 		const cardType: string = prompt("what do you want to call the type ?");
 
-		const cardParentParent = document.querySelector("div.websites");
+		const cardParentParent: HTMLDivElement = document.querySelector("div.websites");
 
-		const addCardParent = cardParentParent.appendChild(
-			document.createElement("div")
-		);
+		const addCardParent = cardParentParent.appendChild(document.createElement("div"));
 		addCardParent.classList.add(cardType, "subheader");
 
 		const sub = addCardParent.appendChild(document.createElement("h1"));

@@ -1,0 +1,8 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"watch": true,
+		"esModuleInterop": true,
+		"module": "ESNext"
+	}
+}
