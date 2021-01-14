@@ -1,23 +1,14 @@
 import React from "react";
+import Form from "./components/Form";
 import "./App.css";
-
-interface WelcomeProps {
-	user: string;
-	age: number | string;
-}
-
-const Welcome: React.FC<WelcomeProps> = (props) => {
-	return (
-		<h1>
-			Hello {props.user}, You are {props.age} old
-		</h1>
-	);
-};
 
 function App() {
 	return (
 		<div className="App">
-			<Welcome user="momofor" age="13" />
+			<header>
+				<h1>My To Do List</h1>
+			</header>
+			<Form />
 		</div>
 	);
 }
