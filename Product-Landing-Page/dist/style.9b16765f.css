@@ -1,0 +1,13 @@
+body {
+  background-color: #2e3440;
+  max-width: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=/style.9b16765f.css.map */

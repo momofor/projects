@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles.css" />
-		<script src="./script.js" async></script>
+		<meta name="description" content="une facon pour comparer les nombres" />
+		<link rel="stylesheet" href="../src/styles.scss" />
+		<script src="../src/script.ts" async></script>
 		<link
 			rel="icon"
 			href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F43%2F43110.png&f=1&nofb=1"
@@ -18,28 +19,31 @@
 		<form action="">
 			<p id="title">La formule est pour comparer x et a</p>
 			<p class="sub">entrer la value de x</p>
-			<input type="number" placeholder="x=" name="x" id="x" />
+			<label for="x">
+				<input type="number" id="x" placeholder="x=" name="x" id="x" />
+			</label>
 
 			<p class="sub">entrer la value de a</p>
-			<input type="number" placeholder="a=" name="a" id="a" />
+
+			<label for="a">
+				<input type="number" id="a" placeholder="a=" name="a" id="a" />
+			</label>
 
 			<p class="sub add">entrer la value de b</p>
-			<input type="number" placeholder="b=" name="b" id="b" class="add" />
+			<label for="b">
+				<input type="number" id="b" placeholder="b=" name="b" id="b" class="add" />
+			</label>
+
 			<p class="sub add">enter la value de c</p>
-			<input type="number" name="c" placeholder="c=" id="c" class="add" />
+			<label for="c">
+				<input type="number" id="c" name="c" placeholder="c=" id="c" class="add" />
+			</label>
+
 			<div class="resultat">
 				<p class="sub">Le résultat est:</p>
 				<p class="result"></p>
-				<input
-					type="button"
-					id="resultBut"
-					value="clicker ici pour le résultat"
-				/>
-				<input
-					type="button"
-					class="addToggle"
-					value="clicker pour activer c et b"
-				/>
+				<input type="button" id="resultBut" value="clicker ici pour le résultat" />
+				<input type="button" class="addToggle" value="clicker pour activer c et b" />
 			</div>
 		</form>
 	</body>
