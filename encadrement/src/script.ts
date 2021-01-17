@@ -9,10 +9,10 @@ const add = document.getElementsByClassName("add");
 
 resultBut.addEventListener("click", log);
 function log() {
-	let aVal: number = a.valueAsNumber;
-	let xVal: number = x.valueAsNumber;
+	const aVal: number = a.valueAsNumber;
+	const xVal: number = x.valueAsNumber;
 
-	let ax: number = aVal - xVal;
+	const ax: number = aVal - xVal;
 
 	if (ax < 0) {
 		result.textContent =
@@ -46,10 +46,11 @@ function logCB() {
 		element.style.visibility = "visible";
 	}
 
-	let aVal: number = a.valueAsNumber;
-	let xVal: number = x.valueAsNumber;
-	let bVal: number = b.valueAsNumber;
-	let cVal: number = c.valueAsNumber;
-	let ax: number = aVal - xVal;
-	let bb: number = ax - bVal;
+	const aVal: number = a.valueAsNumber;
+	const xVal: number = x.valueAsNumber;
+	const bVal: number = b.valueAsNumber;
+	const cVal: number = c.valueAsNumber;
+	const ax: number = aVal - xVal;
+	const bb: number = ax - bVal;
+	console.log(`${bb} ${cVal}`);
 }

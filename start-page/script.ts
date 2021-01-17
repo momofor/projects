@@ -1,5 +1,4 @@
-setInterval(showTime, 1000);
-function showTime() {
+const showTime = () => {
 	const time = new Date();
 	let hour: string | number = time.getHours();
 	let min: string | number = time.getMinutes();
@@ -22,14 +21,15 @@ function showTime() {
 	const currentTime = hour + ":" + min + ":" + sec + am_pm;
 
 	document.querySelector(".clock").innerHTML = currentTime;
-}
+};
+
+setInterval(showTime, 1000);
+
 showTime();
-console.log("is this showing up ?");
 
 const create = document.querySelector("button");
-create.addEventListener("click", createCard);
 
-function createCard() {
+const createCard = () => {
 	const cardName = prompt("call the card");
 	const cardLink = prompt("call the link");
 	const newType: string = prompt("do you want to create a new class of cards? yes/no");
@@ -48,24 +48,26 @@ function createCard() {
 
 		const card = addCardParent.appendChild(document.createElement("div"));
 		card.classList.add("card", cardName);
-		const finishedCard = document.querySelector(".card." + cardName);
+		const finishedCard = document.querySelector(`.card.${cardName}`);
 
 		const anchor = finishedCard.appendChild(document.createElement("a"));
 		anchor.classList.add(cardName);
-		const link1 = document.querySelector("a." + cardName);
+		const link1 = document.querySelector(`a.${cardName}`);
 		link1.setAttribute("href", cardLink);
 		link1.innerHTML = cardName;
 	} else {
 		const cardType = prompt("what type do you want the card");
-		const setCardType = document.querySelector("div." + cardType);
+		const setCardType = document.querySelector(`div.${cardType}`);
 		const card = setCardType.appendChild(document.createElement("div"));
 		card.classList.add("card", cardName);
-		const finishedCard = document.querySelector(".card." + cardName);
+		const finishedCard = document.querySelector(`.card.${cardName}`);
 
 		const anchor = finishedCard.appendChild(document.createElement("a"));
 		anchor.classList.add(cardName);
-		const link1 = document.querySelector("a." + cardName);
+		const link1 = document.querySelector(`a.${cardName}`);
 		link1.setAttribute("href", cardLink);
 		link1.innerHTML = cardName;
 	}
-}
+};
+
+create.addEventListener("click", createCard);

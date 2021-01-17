@@ -1,13 +1,17 @@
 body {
   background-color: #2e3440;
   max-width: 80vh;
-  display: flex;
-  flex-direction: column;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: white;
   font-family: sans-serif;
+}
+
+#me {
+  position: relative;
+  top: 0;
 }
 
 /*# sourceMappingURL=/style.9b16765f.css.map */

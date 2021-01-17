@@ -7,3 +7,10 @@ btn.addEventListener("click", () => {
 		alert(`Woo Hoo it's you ${name}`);
 	}
 });
+
+const footer = <HTMLDivElement>document.querySelector("footer");
+
+const dateu = new Date();
+const year = dateu.getFullYear();
+
+footer.textContent += year;
