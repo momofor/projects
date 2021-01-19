@@ -6,6 +6,9 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import HelloWorld from "./components/HelloWorld.vue";
+const you = "you"
+const me = "me"
+const helloWorld = `${you} are ${me}`
 
 @Options({
   components: {

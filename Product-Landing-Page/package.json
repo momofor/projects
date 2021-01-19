@@ -16,5 +16,8 @@
 		"parcel-bundler": "^1.12.4",
 		"sass": "^1.32.4",
 		"typescript": "^4.1.3"
+	},
+	"dependencies": {
+		"prettier-eslint": "^12.0.0"
 	}
 }

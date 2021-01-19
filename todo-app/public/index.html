@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles.css" />
-		<script src="./script.js" defer></script>
+		<link rel="stylesheet" href="../src/styles.scss" />
+		<script src="../src/script.ts" defer></script>
 		<script src="https://use.fontawesome.com/9c640dfcf6.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
 		<title>todo</title>
@@ -17,8 +17,15 @@
 			</select>
 			<h1>TO Do !</h1>
 			<h2>add a task</h2>
-			<input type="text" id="task" value="" />
-			<input type="button" value="add Task" id="taskBut" />
+
+			<label for="task">
+				<input type="text" id="task" value="" />
+			</label>
+
+			<label for="taskBut">
+				<input type="button" value="add Task" id="taskBut" />
+			</label>
+
 			<button id="clear" type="button">clear tasks</button>
 		</form>
 		<div id="tasks"></div>
