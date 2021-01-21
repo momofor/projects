@@ -1,2 +1,0 @@
-var you = [];
-var me = [];
