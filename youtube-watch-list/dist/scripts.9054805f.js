@@ -120,19 +120,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"../src/scripts/index.ts":[function(require,module,exports) {
 var addBut = document.querySelector(".addItem");
 var listsContainer = document.querySelector(".listsContainer");
-var listContainer = document.querySelector(".listContainer");
-var listTitle = document.querySelector(".title");
-var listDescription = document.querySelector(".description");
-var listChannel = document.querySelector(".channel");
 
 var AddItemToList = function AddItemToList() {
   var videosList = listsContainer.appendChild(document.createElement("ul"));
   videosList.classList.add("listContainer");
   var itemTitle = prompt("what is the title of the video you wanna watch ?");
   var itemLink = prompt("what is the link of the video : \"" + itemTitle + "\"");
-  var itemDescription = prompt("describe the video to remember it "); // making the list
-  //
-
+  var itemDescription = prompt("describe the video to remember it ");
   var videoTitle = videosList.appendChild(document.createElement("li"));
   videoTitle.classList.add("title");
   var videoAnchor = videoTitle.appendChild(document.createElement("a"));
@@ -173,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41571" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44127" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
