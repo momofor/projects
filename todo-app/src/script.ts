@@ -2,7 +2,6 @@ const taskInput = <HTMLInputElement>document.querySelector("#task");
 const taskButton = <HTMLInputElement>document.getElementById("taskBut");
 const clearButton = <HTMLButtonElement>document.querySelector("#clear");
 const tasksContainer = <HTMLDivElement>document.querySelector("#tasks");
-const taskCard = <HTMLLIElement>document.querySelector(".taskCard");
 const removeBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("removeBut");
 const checkBut = <HTMLCollectionOf<HTMLButtonElement>>document.getElementsByClassName("checkBut");
 const filterOption = <HTMLSelectElement>document.querySelector(".filter-tasks");
@@ -29,7 +28,7 @@ function AddTask() {
 
 	for (let i = 0; i < removeBut.length; i++) {
 		removeBut[i].onclick = function () {
-			var thisCardContainer = (this as HTMLButtonElement).parentElement;
+			const thisCardContainer = (this as HTMLButtonElement).parentElement;
 			thisCardContainer.classList.add("fall");
 			thisCardContainer.addEventListener("transitionend", () => {
 				thisCardContainer.remove();
@@ -39,7 +38,7 @@ function AddTask() {
 
 	for (let i = 0; i < checkBut.length; i++) {
 		checkBut[i].onclick = function () {
-			var thisCardContainer = (this as HTMLButtonElement).parentElement;
+			const thisCardContainer = (this as HTMLButtonElement).parentElement;
 			thisCardContainer.classList.add("checked");
 		};
 	}
@@ -48,9 +47,9 @@ function AddTask() {
 }
 
 tasksContainer.addEventListener("click", (e: Event) => {
-	let target: any = e.target;
+	const target: EventTarget = e.target;
 	if ((target as HTMLButtonElement).classList.contains("checkBut")) {
-		const thisParent: HTMLUListElement = target.parentElement;
+		const thisParent: HTMLElement = (target as HTMLElement).parentElement;
 		thisParent.classList.toggle("checked");
 	}
 });
@@ -62,10 +61,10 @@ function ClearTasks() {
 	}
 }
 
-function FilterTasks(e: any) {
+function FilterTasks(e: Event) {
 	const taskList = tasksContainer.childNodes;
 	taskList.forEach((taskCard) => {
-		switch (e.target.value) {
+		switch ((e.target as HTMLInputElement).value) {
 			case "all":
 				(taskCard as HTMLLIElement).style.display = "flex";
 				break;

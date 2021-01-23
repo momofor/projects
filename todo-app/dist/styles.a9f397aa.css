@@ -74,4 +74,8 @@ form {
   cursor: pointer;
 }
 
+.fas {
+  pointer-events: none;
+}
+
 /*# sourceMappingURL=/styles.a9f397aa.css.map */

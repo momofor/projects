@@ -1,0 +1,8 @@
+{
+  "name": "react-ts-webpack",
+  "version": "1.0.0",
+  "description": "a cool test webpack react typescript project",
+  "main": "index.js",
+  "author": "momofor",
+  "license": "MIT"
+}

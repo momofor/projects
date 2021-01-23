@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+0	package.json	/^		"f"$/;"	s	array:keywords
+@typescript-eslint/eslint-plugin	package.json	/^		"@typescript-eslint\/eslint-plugin": "^4.14.0",$/;"	s	object:devDependencies
+@typescript-eslint/parser	package.json	/^		"@typescript-eslint\/parser": "^4.14.0",$/;"	s	object:devDependencies
+author	package.json	/^	"author": "momofor",$/;"	s
+build	package.json	/^		"build": "parcel build public\/index.html "$/;"	s	object:scripts
+compileOnSave	tsconfig.json	/^	"compileOnSave": true,$/;"	b
+compilerOptions	tsconfig.json	/^	"compilerOptions": {$/;"	o
+cssnano	package.json	/^		"cssnano": "^4.1.10",$/;"	s	object:devDependencies
+dependencies	package.json	/^	"dependencies": {$/;"	o
+description	package.json	/^	"description": "a yout cool",$/;"	s
+dev	package.json	/^		"dev": "parcel public\/index.html -p 8080",$/;"	s	object:scripts
+devDependencies	package.json	/^	"devDependencies": {$/;"	o
+dotenv	package.json	/^		"dotenv": "^8.2.0",$/;"	s	object:dependencies
+esModuleInterop	tsconfig.json	/^		"esModuleInterop": true,$/;"	b	object:compilerOptions
+eslint	package.json	/^		"eslint": "^7.18.0",$/;"	s	object:devDependencies
+express	package.json	/^		"express": "^4.17.1",$/;"	s	object:dependencies
+graphql	package.json	/^		"graphql": "^15.4.0",$/;"	s	object:dependencies
+keywords	package.json	/^	"keywords": [$/;"	a
+license	package.json	/^	"license": "ISC",$/;"	s
+main	package.json	/^	"main": "index.js",$/;"	s
+module	tsconfig.json	/^		"module": "ESNext"$/;"	s	object:compilerOptions
+name	package.json	/^	"name": "youtube-watch-list",$/;"	s
+sass	package.json	/^		"sass": "^1.32.4",$/;"	s	object:devDependencies
+scripts	package.json	/^	"scripts": {$/;"	o
+test	package.json	/^		"test": "echo \\"Error: no test specified\\" && exit 1",$/;"	s	object:scripts
+tsun	package.json	/^		"tsun": "^0.5.0"$/;"	s	object:dependencies
+typescript	package.json	/^		"typescript": "^4.1.3"$/;"	s	object:devDependencies
+version	package.json	/^	"version": "1.0.0",$/;"	s
+watch	tsconfig.json	/^		"watch": true,$/;"	b	object:compilerOptions
