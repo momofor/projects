@@ -2,12 +2,14 @@
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "ESNext",
+		"lib": ["ESNext", "ES2015", "DOM"],
 		"declaration": true,
 		"watch": true,
 		"rootDir": "./",
 		"outDir": "../public",
 
 		"strict": true,
+		"noImplicitAny": true,
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"strictBindCallApply": true,
@@ -21,7 +23,7 @@
 		"noFallthroughCasesInSwitch": true,
 
 		"moduleResolution": "node",
-		"typeRoots": ["./types/"],
+		"declarationDir": "./types",
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 
@@ -29,6 +31,13 @@
 		"emitDecoratorMetadata": true,
 
 		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+
+		"sourceMap": true,
+		"mapRoot": "./maps",
+
+		"pretty": true,
+		"listFiles": true,
+		"emitBOM": true
 	}
 }

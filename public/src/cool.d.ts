@@ -1,0 +1,1 @@
+//# sourceMappingURL=cool.d.ts.map

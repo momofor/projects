@@ -1,0 +1,7 @@
+{
+  "name": "typescript-webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "momofor",
+  "license": "MIT"
+}

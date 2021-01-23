@@ -1,0 +1,9 @@
+{
+	"allowJs": true,
+	"checkJs": true,
+	"inlineSourceMap": true,
+	"inlineSources": true,
+	"jsx": "preserve",
+	"noEmit": true,
+	"isolatedModules": true
+}
