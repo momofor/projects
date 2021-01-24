@@ -1,0 +1,1 @@
+﻿//# sourceMappingURL=../maps/cool.d.ts.map
