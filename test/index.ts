@@ -1,7 +1,7 @@
-class HelloWorld {
-	greeting = (greet: string): void => {
-		console.log(greet);
-	};
+interface HelloWorldType {
+	greeting: (greet: string) => void;
 }
-const helloyou = new HelloWorld();
-helloyou.greeting("hello you");
+
+const HelloWorld: HelloWorldType = {
+	greeting: (greet) => console.log(greet),
+};
