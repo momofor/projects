@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { TodolistItem } from "./TodoListItem";
+import { AddTodoForm } from "./AddTodoForm";
+import { TodoList } from "./TodoList";
 
 const initialTodos: Array<todoListItemProps["todo"]> = [
 	{ text: "do laundrey", complete: false },
@@ -19,12 +20,14 @@ const App: React.FC = () => {
 		});
 		setTodos(newTodos);
 	};
+	const addTodo: AddTodoFormProps["addTodo"] = (newTodo) => {
+		newTodo.trim() !== "" && setTodos([...todos, { text: newTodo, complete: false }]);
+	};
 
 	return (
 		<div>
-			<TodolistItem todo={todos[0]} toggleTodo={toggleTodo} />
-			<TodolistItem todo={todos[1]} toggleTodo={toggleTodo} />
-			<TodolistItem todo={todos[2]} toggleTodo={toggleTodo} />
+			<TodoList todos={todos} toggleTodo={toggleTodo} />
+			<AddTodoForm addTodo={addTodo} />
 		</div>
 	);
 };
