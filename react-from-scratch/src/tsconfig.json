@@ -1,0 +1,48 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "esnext",
+		"rootDir": "./",
+		"lib": ["ESNext", "ES2015", "DOM", "es6", "dom.iterable"],
+		"declaration": true,
+		"watch": true,
+		"outDir": "../public",
+
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		"moduleResolution": "node",
+		"declarationDir": "./types",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+
+		"sourceMap": true,
+		"declarationMap": true,
+		"mapRoot": "./maps",
+
+		"pretty": true,
+		"listFiles": true,
+		"emitBOM": true,
+		"jsx": "react-jsx",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true
+	}
+}

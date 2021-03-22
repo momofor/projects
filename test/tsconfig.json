@@ -1,8 +1,41 @@
 {
-	"compileOnSave": true,
 	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["DOM", "ESNext"],
+		"declaration": true,
 		"watch": true,
+		"rootDir": "./",
+
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+
+		"moduleResolution": "node",
+		"declarationDir": "./types",
+		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"module": "ESNext"
+
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+
+		"sourceMap": true,
+		"declarationMap": true,
+		"mapRoot": "./maps",
+
+		"pretty": true,
+		"listFiles": true,
+		"emitBOM": true
 	}
 }

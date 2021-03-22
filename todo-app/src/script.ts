@@ -9,6 +9,16 @@ const filterOption = <HTMLSelectElement>document.querySelector(".filter-tasks");
 taskButton.addEventListener("click", AddTask);
 filterOption.addEventListener("click", FilterTasks);
 
+function addEm(this: any, ConstName: string, ConstValue: string) {
+	this[ConstName] = document.querySelector(ConstValue);
+}
+
+function addElements(elemets: object) {
+	for (let [keyu, value] of Object.entries(elemets)) {
+		addEm(keyu, value);
+	}
+}
+
 function AddTask() {
 	const taskVal = taskInput.value;
 	const createTaskContainer = tasksContainer.appendChild(document.createElement("ul"));
@@ -28,7 +38,7 @@ function AddTask() {
 
 	for (let i = 0; i < removeBut.length; i++) {
 		removeBut[i].onclick = function () {
-			const thisCardContainer = (this as HTMLButtonElement).parentElement;
+			const thisCardContainer = (this as HTMLButtonElement).parentElement!;
 			thisCardContainer.classList.add("fall");
 			thisCardContainer.addEventListener("transitionend", () => {
 				thisCardContainer.remove();
@@ -38,7 +48,7 @@ function AddTask() {
 
 	for (let i = 0; i < checkBut.length; i++) {
 		checkBut[i].onclick = function () {
-			const thisCardContainer = (this as HTMLButtonElement).parentElement;
+			const thisCardContainer = (this as HTMLButtonElement).parentElement!;
 			thisCardContainer.classList.add("checked");
 		};
 	}
@@ -47,9 +57,9 @@ function AddTask() {
 }
 
 tasksContainer.addEventListener("click", (e: Event) => {
-	const target: EventTarget = e.target;
+	const target: EventTarget = e.target!;
 	if ((target as HTMLButtonElement).classList.contains("checkBut")) {
-		const thisParent: HTMLElement = (target as HTMLElement).parentElement;
+		const thisParent: HTMLElement = (target as HTMLElement).parentElement!;
 		thisParent.classList.toggle("checked");
 	}
 });
@@ -57,7 +67,7 @@ tasksContainer.addEventListener("click", (e: Event) => {
 clearButton.addEventListener("click", ClearTasks);
 function ClearTasks() {
 	while (tasksContainer.firstChild) {
-		tasksContainer.removeChild(tasksContainer.lastChild);
+		tasksContainer.removeChild(tasksContainer.lastChild!);
 	}
 }
 

@@ -1,0 +1,19 @@
+{
+	"name": "react-from-scratch",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "momofor",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc index.ts"
+	},
+	"dependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"devDependencies": {
+		"typescript": "^4.2.3",
+		"@types/react": "^17.0.3",
+		"@types/react-dom": "^17.0.2"
+	}
+}

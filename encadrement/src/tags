@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+0	.eslintrc.json	/^            "error",$/;"	s	array:rules.indent
+0	.eslintrc.json	/^            "error",$/;"	s	array:rules.linebreak-style
+0	.eslintrc.json	/^            "error",$/;"	s	array:rules.quotes
+0	.eslintrc.json	/^            "error",$/;"	s	array:rules.semi
+0	.eslintrc.json	/^        "@typescript-eslint"$/;"	s	array:plugins
+0	.eslintrc.json	/^        "eslint:recommended",$/;"	s	array:extends
+000	styles.scss	/^            box-shadow: 2px 2px 2px rgba($color: #000, $alpha: .5);$/;"	i
+000	styles.scss	/^            box-shadow: 2px 2px 2px rgba($color: #000, $alpha: .9);$/;"	i
+1	.eslintrc.json	/^            "always"$/;"	s	array:rules.semi
+1	.eslintrc.json	/^            "double"$/;"	s	array:rules.quotes
+1	.eslintrc.json	/^            "tab"$/;"	s	array:rules.indent
+1	.eslintrc.json	/^            "unix"$/;"	s	array:rules.linebreak-style
+1	.eslintrc.json	/^        "plugin:@typescript-eslint\/recommended"$/;"	s	array:extends
+add	styles.scss	/^.add {$/;"	c
+body	styles.scss	/^body {$/;"	t
+browser	.eslintrc.json	/^        "browser": true,$/;"	b	object:env
+button	styles.scss	/^button {$/;"	t
+compileOnSave	tsconfig.json	/^	"compileOnSave": true,$/;"	b
+compilerOptions	tsconfig.json	/^	"compilerOptions": {$/;"	o
+ecmaVersion	.eslintrc.json	/^        "ecmaVersion": 12$/;"	n	object:parserOptions
+env	.eslintrc.json	/^    "env": {$/;"	o
+es2021	.eslintrc.json	/^        "es2021": true$/;"	b	object:env
+esModuleInterop	tsconfig.json	/^		"esModuleInterop": true,$/;"	b	object:compilerOptions
+extends	.eslintrc.json	/^    "extends": [$/;"	a
+form	styles.scss	/^form {$/;"	t
+h1	styles.scss	/^h1 {$/;"	t
+indent	.eslintrc.json	/^        "indent": [$/;"	a	object:rules
+input	styles.scss	/^    input {$/;"	t
+linebreak-style	.eslintrc.json	/^        "linebreak-style": [$/;"	a	object:rules
+module	tsconfig.json	/^		"module": "ESNext",$/;"	s	object:compilerOptions
+outDir	tsconfig.json	/^		"outDir": "..\/public"$/;"	s	object:compilerOptions
+parser	.eslintrc.json	/^    "parser": "@typescript-eslint\/parser",$/;"	s
+parserOptions	.eslintrc.json	/^    "parserOptions": {$/;"	o
+plugins	.eslintrc.json	/^    "plugins": [$/;"	a
+quotes	.eslintrc.json	/^        "quotes": [$/;"	a	object:rules
+result	styles.scss	/^.result {$/;"	c
+resultBut	styles.scss	/^#resultBut {$/;"	i
+rootDir	tsconfig.json	/^		"rootDir": ".\/",$/;"	s	object:compilerOptions
+rules	.eslintrc.json	/^    "rules": {$/;"	o
+semi	.eslintrc.json	/^        "semi": [$/;"	a	object:rules
+sub	styles.scss	/^    .sub {$/;"	c
+title	styles.scss	/^#title {$/;"	i
+title	styles.scss	/^.title {$/;"	c
+watch	tsconfig.json	/^		"watch": true,$/;"	b	object:compilerOptions
