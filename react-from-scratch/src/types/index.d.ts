@@ -1,2 +1,2 @@
-﻿export declare const me = "hello this is me";
+export {};
 //# sourceMappingURL=../maps/index.d.ts.map
