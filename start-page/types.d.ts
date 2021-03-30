@@ -1,0 +1,1 @@
+type time = string | number;

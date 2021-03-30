@@ -6,7 +6,7 @@
 		"lib": ["ESNext", "ES2015", "DOM", "es6", "dom.iterable"],
 		"declaration": true,
 		"watch": true,
-		"outDir": "../public",
+		"outDir": "../dist/js",
 
 		"strict": true,
 		"noImplicitAny": true,
@@ -23,7 +23,7 @@
 		"noFallthroughCasesInSwitch": true,
 
 		"moduleResolution": "node",
-		"declarationDir": "./types",
+		"declarationDir": "./typesu",
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 
@@ -42,6 +42,8 @@
 		"emitBOM": true,
 		"jsx": "react-jsx",
 		"allowJs": true,
-		"resolveJsonModule": true
-	}
+		"resolveJsonModule": true,
+		"isolatedModules": true
+	},
+	"exclude": ["./types/* .ts"]
 }

@@ -36,6 +36,7 @@
 
 		"pretty": true,
 		"listFiles": true,
-		"emitBOM": true
+		"emitBOM": true,
+		"resolveJsonModule": true
 	}
 }
