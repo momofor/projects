@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "webpack",
-		"start": "webpack-dev-server"
+		"start": "webpack serve --open"
 	},
 	"dependencies": {
 		"@types/react": "^17.0.3",

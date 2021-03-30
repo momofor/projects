@@ -40,7 +40,7 @@
 		"pretty": true,
 		"listFiles": true,
 		"emitBOM": true,
-		"jsx": "react-jsx",
+		"jsx": "react",
 		"allowJs": true,
 		"resolveJsonModule": true
 	}

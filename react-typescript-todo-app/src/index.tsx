@@ -1,6 +1,5 @@
 import { App } from "./app";
-
-import * as React from "react";
 import ReactDOM from "react-dom";
+export {};
 
 ReactDOM.render(<App />, document.getElementById("root"));
