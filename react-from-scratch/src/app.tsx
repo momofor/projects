@@ -1,18 +1,24 @@
 import * as React from "react";
-
-interface propsI {
-	name: string;
-}
-
-const Welcome: React.FC<propsI> = (propsu) => {
-	return <h2>hello {propsu.name}</h2>;
-};
-
+import Welcome from "./hello";
 const App: React.FC = () => {
+	const [text, setText] = React.useState("");
+
+	const onInputChangeHandler: React.FormEventHandler = (
+		event: React.FormEvent<HTMLInputElement>
+	) => {
+		setText(event.currentTarget.value);
+	};
+
 	return (
 		<div>
 			<h1>hello world</h1>
 			<Welcome name="momofor" />
+			<input
+				type="text"
+				placeholder="enter name"
+				onChange={onInputChangeHandler}
+			/>
+			<p>and what you typed is {text}</p>
 		</div>
 	);
 };

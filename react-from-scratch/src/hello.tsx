@@ -4,7 +4,7 @@ interface propsI {
 	name: string;
 }
 
-const welcome: React.FC<propsI> = (propsu) => {
+const Welcome: React.FC<propsI> = (propsu) => {
 	return <h2>hello {propsu.name}</h2>;
 };
-export default welcome;
+export default Welcome;
