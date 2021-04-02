@@ -22,10 +22,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_dom_1 = __importDefault(require("react-dom"));
 const React = __importStar(require("react"));
-require("./style.scss");
-const app_1 = __importDefault(require("./app"));
-react_dom_1.default.render(React.createElement(React.StrictMode, null,
-    React.createElement(app_1.default, null)), document.getElementById("root"));
-//# sourceMappingURL=../src/maps/index.js.map
+const hello_1 = __importDefault(require("./hello"));
+const App = () => {
+    const [text, setText] = React.useState("");
+    const onInputChangeHandler = (event) => {
+        setText(event.currentTarget.value);
+    };
+    return (React.createElement("div", null,
+        React.createElement("h1", null, "hello world"),
+        React.createElement(hello_1.default, { name: "momofor" }),
+        React.createElement("input", { type: "text", placeholder: "enter name", onChange: onInputChangeHandler }),
+        React.createElement("p", null,
+            "and what you typed is ",
+            text)));
+};
+exports.default = App;
+//# sourceMappingURL=../src/maps/app.js.map

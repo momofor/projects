@@ -18,14 +18,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const react_dom_1 = __importDefault(require("react-dom"));
 const React = __importStar(require("react"));
-require("./style.scss");
-const app_1 = __importDefault(require("./app"));
-react_dom_1.default.render(React.createElement(React.StrictMode, null,
-    React.createElement(app_1.default, null)), document.getElementById("root"));
-//# sourceMappingURL=../src/maps/index.js.map
+const Welcome = (propsu) => {
+    return React.createElement("h2", null,
+        "hello ",
+        propsu.name);
+};
+exports.default = Welcome;
+//# sourceMappingURL=../src/maps/hello.js.map

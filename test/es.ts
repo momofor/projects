@@ -15,6 +15,6 @@ const coolu = {
 	you: "bye",
 };
 addElements(coolu);
-console.log("hello")
-let me:boolean;
-addElements(coolu)
+console.log("hello");
+let me: boolean;
+addElements(coolu);
