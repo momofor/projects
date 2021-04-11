@@ -15,6 +15,7 @@ export class Book extends BaseEntity {
 	@Field(() => String)
 	@Column()
 	title: string;
+
 	@Field(() => Boolean)
 	@Column({ default: false })
 	isPublished: boolean;
