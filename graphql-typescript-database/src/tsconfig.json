@@ -6,7 +6,7 @@
 		"declaration": true,
 		"watch": true,
 		"rootDir": "./",
-		"outDir": "../public",
+		"outDir": "../build",
 
 		"strict": true,
 		"noImplicitAny": true,

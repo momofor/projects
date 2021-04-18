@@ -1,8 +1,11 @@
-﻿declare function addEm(this: any, ConstName: string, ConstValue: string): void;
-declare function addElements(elemets: object): void;
-declare const coolu: {
-    me: string;
-    you: string;
-};
-declare let me: boolean;
+﻿declare let I: number;
+/**
+ * cool thing
+ * @remarks
+ * this is our arrays util
+ * @param curObject The object
+ * @returns the current value of the interpreted object
+ **/
+declare const addElements: <T>(curObject: T[]) => T;
+declare const nice: string[];
 //# sourceMappingURL=../maps/es.d.ts.map
