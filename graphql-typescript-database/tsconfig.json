@@ -5,8 +5,7 @@
 		"lib": ["ESNext", "ES2015", "DOM"],
 		"declaration": true,
 		"watch": true,
-		"rootDir": "./",
-		"outDir": "../build",
+		"outDir": "./build",
 
 		"strict": true,
 		"noImplicitAny": true,
@@ -23,7 +22,7 @@
 		"noFallthroughCasesInSwitch": true,
 
 		"moduleResolution": "node",
-		"declarationDir": "./types",
+		"declarationDir": "./src/types",
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 
@@ -35,10 +34,12 @@
 
 		"sourceMap": true,
 		"declarationMap": true,
-		"mapRoot": "./maps",
+		"mapRoot": "./src/maps",
 
 		"pretty": true,
 		"listFiles": true,
 		"emitBOM": true
-	}
+	},
+	"files": ["./src/*/*.ts"],
+	"exclude": ["node_modules", "public", "build", "dist"]
 }
