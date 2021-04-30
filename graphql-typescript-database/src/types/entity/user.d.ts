@@ -7,4 +7,4 @@ export declare class User extends BaseEntity {
     name(parent: User): string;
     password: string;
 }
-//# sourceMappingURL=../../src/maps/entity/user.d.ts.map
+//# sourceMappingURL=../../maps/entity/user.d.ts.map

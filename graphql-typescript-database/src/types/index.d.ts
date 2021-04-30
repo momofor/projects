@@ -1,2 +1,2 @@
 ﻿import "reflect-metadata";
-//# sourceMappingURL=../src/maps/index.d.ts.map
+//# sourceMappingURL=../maps/index.d.ts.map

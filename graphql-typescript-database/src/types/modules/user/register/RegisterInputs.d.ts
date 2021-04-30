@@ -4,4 +4,4 @@
     email: string;
     password: string;
 }
-//# sourceMappingURL=../../../../src/maps/modules/user/register/RegisterInputs.d.ts.map
+//# sourceMappingURL=../../../../maps/modules/user/register/RegisterInputs.d.ts.map
